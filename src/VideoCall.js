@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import useAgoda from "./Hook";
+import useAgora from "./Hook";
 import Controls from "./Controls";
 import WebDashboard from "./Dashboard";
 
@@ -9,7 +9,7 @@ const token =
 
 const VideoCall = (props) => {
   const { setInCall, channelName } = props;
-  const [useClient, useMicrophoneAndCameraTracks] = useAgoda();
+  const [useClient, useMicrophoneAndCameraTracks] = useAgora();
   const [users, setUsers] = useState([]);
   const [start, setStart] = useState(false);
   const client = useClient();

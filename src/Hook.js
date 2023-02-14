@@ -5,11 +5,11 @@ const config = {
   codec: "vp8",
 };
 
-function useAgoda() {
+function useAgora() {
   const useClient = createClient(config);
   const useMicrophoneAndCameraTracks = createMicrophoneAndCameraTracks();
 
   return [useClient, useMicrophoneAndCameraTracks];
 }
 
-export default useAgoda;
+export default useAgora;

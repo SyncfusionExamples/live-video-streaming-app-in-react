@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import useAgoda from "./Hook";
+import useAgora from "./Hook";
 
 const Controls = (props) => {
-  const [useClient] = useAgoda();
+  const [useClient] = useAgora();
   const client = useClient();
   const { tracks, setStart, setInCall } = props;
   const [trackState, setTrackState] = useState({ video: true, audio: true });
